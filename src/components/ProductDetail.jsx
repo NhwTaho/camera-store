@@ -135,18 +135,22 @@ const ProductDetail = props => {
           <div className="category">
             <span>Categories</span> 
               {(() => {
-                if(product.categorySlug === "smart-phone"){
+                if(product.categorySlug === "camera-dome"){
                   return(
-                    <strong> Smart Phone</strong>
+                    <strong> Camera Dome</strong>
                   )
                   
-                } else if(product.categorySlug === "tablet"){
+                } else if(product.categorySlug === "camera-zoom"){
                   return(
-                    <strong> Tablet</strong>
+                    <strong> Camera Zoom</strong>
+                  )
+                } else if(product.categorySlug === "hồng-ngoại"){
+                  return(
+                    <strong> Hồng Ngoại</strong>
                   )
                 } else {
                   return(
-                    <strong> Accessory</strong>
+                    <strong>Camera Thân</strong>
                   )
                 }
               })()}
@@ -155,18 +159,22 @@ const ProductDetail = props => {
             <span>Tags:</span> 
             
                 {(() => {
-                  if(product.categorySlug === "smart-phone"){
+                  if(product.categorySlug === "camera-dome"){
                     return(
-                      <strong> Smart Phone, Phone</strong>
+                      <strong> Camera Dome</strong>
                     )
                     
-                  } else if(product.categorySlug === "tablet"){
+                  } else if(product.categorySlug === "camera-zoom"){
                     return(
-                      <strong> Tablet</strong>
+                      <strong> Camera Zoom</strong>
+                    )
+                  } else if(product.categorySlug === "hồng-ngoại"){
+                    return(
+                      <strong> Hồng Ngoại</strong>
                     )
                   } else {
                     return(
-                      <strong> Accessory</strong>
+                      <strong>Camera Thân </strong>
                     )
                   }
                 })()}
@@ -190,7 +198,7 @@ const ProductDetail = props => {
                 <div key={index} className={`product-detail__content__info__item__list__size ${size === item ? 'active' : ''}`}
                   onClick={() => setSize(item)}
                 >
-                  {item}GB
+                  {item}nm
                 </div>
               ))
             }
@@ -229,26 +237,26 @@ const ProductDetail = props => {
           <TabPanel>
             <div className="product-detail__content__info__information">
               <div className="product-detail__content__info__information__item">
-                <h3>Weight:</h3>
-                <span>400g</span>
+                <h3>Audio:</h3>
+                <span>Built-in Microphone and Speaker</span>
               </div>
               <div className="product-detail__content__info__information__item">
-                <h3>Dimensions:</h3>
-                <span>10 x 10 x 15 cm</span>
+                <h3>Live View:</h3>
+                <span>Yes</span>
               </div>
               <div className="product-detail__content__info__information__item">
-                <h3>Materials:</h3>
-                <span>Lorem ipsum dolor sit amet</span>
+                <h3>RTSP</h3>
+                <span>Yes</span>
               </div>
               <div className="product-detail__content__info__information__item">
-                <h3>Orther Info:</h3>
-                <span>VietName Number One</span>
+                <h3>Origin:</h3>
+                <span> Viet Nam</span>
               </div>
             </div>
           </TabPanel>
           <TabPanel>
             <div className="product-detail__content__info__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quo possimus. Veniam iusto voluptatem optio rerum laboriosam sit error doloribus placeat dolores sunt, inventore tempora mollitia perferendis libero magnam soluta.
+            Camera AI Wi-Fi An Ninh Thông Minh Dành Cho Gia Đình Nhằm Xây Dựng Hệ Sinh Thái Thông Minh.
             </div>
           </TabPanel>
           <TabPanel>

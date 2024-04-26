@@ -1,23 +1,23 @@
 const size = [
     {
-        display: "64GB",
-        size: "64"
+        display: "850nm",
+        size: "850"
     },
     {
-        display: "128GB",
-        size: "128"
+        display: "940nm",
+        size: "940"
     },
     {
-        display: "256GB",
-        size: "256"
+        display: "1200nm",
+        size: "1200"
     },
     {
-        display: "512GB",
-        size: "512"
+        display: "1500nm",
+        size: "1500"
     },
     {
-        display: "1T",
-        size: "1000"
+        display: "2000nm",
+        size: "2000"
     },
 ]
 

@@ -1,19 +1,19 @@
 const category = [
     {
-        display: "Smart phone",
-        categorySlug: "smart-phone"
+        display: "Camera dome",
+        categorySlug: "camera-dome"
     },
     {
-        display: "Tablet",
-        categorySlug: "tablet"
+        display: "Camera zoom",
+        categorySlug: "camera-zoom"
     },
     {
-        display: "Laptop",
-        categorySlug: "laptop"
+        display: "Hồng ngoại",
+        categorySlug: "hồng-ngoại"
     },
     {
-        display: "Accessory",
-        categorySlug: "accessory"
+        display: "Camera thân",
+        categorySlug: "camera-thân"
     }
 ]
 

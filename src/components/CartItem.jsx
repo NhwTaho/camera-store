@@ -49,7 +49,7 @@ const CartItem = (props) => {
         <Link to={`/catalog/${item.slug}`}>{item.product.title}</Link>
       </div>
       <div className="cart__item__options">
-        Color: <span>{item.color}</span> - <span>{item.size}GB</span>
+        Color: <span>{item.color}</span> - <span>{item.size}nm</span>
       </div>
       <div className="cart__item__price">{numberWithCommas(item.price)}</div>
       <div className="cart__item__qty">
