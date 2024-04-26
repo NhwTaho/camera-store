@@ -249,8 +249,8 @@ const ProductDetail = props => {
                 <span>Yes</span>
               </div>
               <div className="product-detail__content__info__information__item">
-                <h3>Origin:</h3>
-                <span> Viet Nam</span>
+                {/* <h3>Origin:</h3>
+                <span> Viet Nam</span> */}
               </div>
             </div>
           </TabPanel>

@@ -4,9 +4,9 @@ import Button from "./Button";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import { Link } from "react-router-dom";
 import numberWithCommas from "../utils/numberWithCommas";
-import ig1 from "../assets/images/products/27.jpg";
-import ig2 from "../assets/images/products/30.jpg";
-import ig3 from "../assets/images/products/19.jpg";
+import ig1 from "../assets/images/products/01.jpg";
+import ig2 from "../assets/images/products/04.jpg";
+import ig3 from "../assets/images/products/05.jpg";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
@@ -35,24 +35,24 @@ const getTimeDays = (time) => (time / daySeconds) | 0;
 const featured = [
   {
     img: ig1,
-    path: "/catalog/asus-provider-pro-3",
-    price: '37900000',
+    path: "/catalog/Camera%20Tapo%20C125",
+    price: '890000',
     priceold: '42000000',
-    title: "Asus Provider Pro 3"
+    title: "Camera Tapo C125"
   },
   {
     img: ig2,
-    path: "/catalog/airpods-pro",
-    price: '6920000',
+    path: "/catalog/camera%20Tapo%20C620%20KIT",
+    price: '27490000',
     priceold: '8200000',
-    title: "AirPods Pro"
+    title: "Camera Tapo C620 KIT"
   },
   {
     img: ig3,
-    path: "/catalog/ipad-m1-12-inch",
-    price: '11900000',
+    path: "/catalog/camera%20tapo%20C621%20KIT",
+    price: '19700000',
     priceold: '13290000',
-    title: "iPad M1 12.9 inch"
+    title: "Camera Tapo C621 KIT"
   }
 ]
 
@@ -68,14 +68,14 @@ const FeaturedOffers = () => {
     <div className="featured">
       <div className="featured__title">
         <h1>Featured Offers</h1>
-        <h3>There are many variations of passages of Lorem Ipsum available</h3>
+        <h3>Connecting Businesses and Customers through Unique Offers and Features</h3>
       </div>
       <div className="featured__content">
         <div className="featured__content__left">
           <div className="cl1">
             <h2>
               <Link to="/catalog/iphone-13-pro-max">
-                iPhone 13 Pro Max
+              Camera Tapo C125
               </Link>
             </h2>
             <div className="cl1__price">

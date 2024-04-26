@@ -69,12 +69,12 @@ const products = [
         description: "Smart Wire-Free Pan/Tilt Security Camera and Solar Panel.",
     },
     {
-        title: " Camera Tapo C620 KIT",
+        title: "Camera Tapo C621 KIT",
         price: '19700000',
         img: img05,
         categorySlug: "camera-thân",
         colors: ["white", "black"],
-        slug: "camera tapo C620 KIT",
+        slug: "camera tapo C621 KIT",
         size: ["64", "128", "256"],
         description: "Smart Wire-Free Pan/Tilt Security Camera and Solar Panel.",
     },
@@ -239,48 +239,7 @@ const products = [
         description: "Camera An Ninh Wi-Fi Ngoài Trời Quay/Quét.",
     },
     
-    {
-        title: "Asus Provider Pro 3",
-        price: '26900000',
-        img: img25,
-        categorySlug: "laptop",
-        colors: ["white", "black"],
-        slug: "asus-provider-pro-3",
-        size: ["256", "512", "1000"],
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur doloremque esse laboriosam, ipsa quis dolorem aut labore magni consequuntur cum temporibus soluta quisquam a nemo error natus beatae sequi.",
-    },
-    {
-        title: "Acer Predator 3",
-        price: '29700000',
-        img: img26,
-        categorySlug: "laptop",
-        colors: ["white", "black"],
-        slug: "acer-predator-3",
-        size: ["256", "512", "1000"],
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur doloremque esse laboriosam, ipsa quis dolorem aut labore magni consequuntur cum temporibus soluta quisquam a nemo error natus beatae sequi.",
-    },
-    {
-        title: "AirPods Pro",
-        price: '3690000',
-        img: img27,
-        categorySlug: "accessory",
-        colors: ["white"],
-        slug: "airpods-pro",
-        size: ["64"],
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur doloremque esse laboriosam, ipsa quis dolorem aut labore magni consequuntur cum temporibus soluta quisquam a nemo error natus beatae sequi.",
-    },
-    {
-        title: "Apple Watch Series 7",
-        price: '8690000',
-        img: img28,
-        categorySlug: "accessory",
-        colors: ["white", "green", "pink"],
-        slug: "apple-watch-series-7",
-        size: ["64"],
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur doloremque esse laboriosam, ipsa quis dolorem aut labore magni consequuntur cum temporibus soluta quisquam a nemo error natus beatae sequi.",
-    },
 
-    
     // 18 products
 ]
 
