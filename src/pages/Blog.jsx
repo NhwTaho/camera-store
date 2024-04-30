@@ -36,7 +36,7 @@ const StyledTypography = styled(Typography)({
 
 export default function RecipeReviewCard() {
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 4;
+  const postsPerPage = 8;
 
   // Tính chỉ số bài viết đầu tiên và cuối cùng của trang hiện tại
   const indexOfLastPost = currentPage * postsPerPage;
