@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -17,7 +17,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import blogPosts from '../assets/fake-data/blogs';
 import Helmet from '../components/Helmet';
 import Breadcrumb from '../components/Breadcrumb';
-
+import Pagination from '../components/Pagination'; // Import component phân trang
 
 const Container = styled('div')({
   display: 'flex',
@@ -35,12 +35,25 @@ const StyledTypography = styled(Typography)({
 });
 
 export default function RecipeReviewCard() {
-  const [expanded, setExpanded] = React.useState(false);
-  const [likedPosts, setLikedPosts] = React.useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 4;
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
+  // Tính chỉ số bài viết đầu tiên và cuối cùng của trang hiện tại
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const [expandedState, setExpandedState] = useState({}); // Lưu trạng thái mở rộng của từng card
+
+  const handleExpandClick = (postId) => {
+    setExpandedState((prevExpanded) => {
+      const newExpandedState = { ...prevExpanded };
+      newExpandedState[postId] = !prevExpanded[postId];
+      return newExpandedState;
+    });
   };
+
+  const [likedPosts, setLikedPosts] = useState([]);
 
   const handleLikeClick = (postId) => {
     if (likedPosts.includes(postId)) {
@@ -50,69 +63,74 @@ export default function RecipeReviewCard() {
     }
   };
 
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <Helmet title='Blog'>
       <Breadcrumb title="Blog" link="Blog" slug="/blog"/>
       <Container>
-      {blogPosts.map((post) => (
-        <StyledCard key={post.id}>
-          <CardMedia
-            component="img"
-            height="194"
-            image={post.image}
-            alt={post.title}
-          />
-          <CardHeader
-            avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                H
-              </Avatar>
-            }
-            action={
-              <IconButton aria-label="settings">
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title={<StyledTypography variant="h6" component="div">{post.title} </StyledTypography>}
-            subheader={post.date}
-          />
-          <CardContent>
-            <StyledTypography variant="body2" color="text.secondary">
-              {/* Trích dẫn nội dung hoặc mô tả của blog tại đây */}
-            </StyledTypography>
-          </CardContent>
-          <CardActions disableSpacing>
-            <IconButton
-              aria-label="add to favorites"
-              onClick={() => handleLikeClick(post.id)}
-            >
-              <FavoriteIcon color={likedPosts.includes(post.id) ? 'error' : 'inherit'} />
-              
-            </IconButton>
-            <IconButton aria-label="share">
-              <ShareIcon />
-            </IconButton>
-            <IconButton
-              aria-label="show more"
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
+        {currentPosts.map((post) => (
+          <StyledCard key={post.id}>
+            <CardMedia
+              component="img"
+              height="194"
+              image={post.image}
+              alt={post.title}
+            />
+            <CardHeader
+              avatar={
+                <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                  H
+                </Avatar>
+              }
+              action={
+                <IconButton aria-label="settings">
+                  <MoreVertIcon />
+                </IconButton>
+              }
+              title={<StyledTypography variant="h6" component="div">{post.title}</StyledTypography>}
+              subheader={post.date}
+            />
             <CardContent>
-              <StyledTypography paragraph variant="body1" textAlign="justify">{post.content}</StyledTypography>
-              <StyledTypography paragraph textAlign="justify">
-               
+              <StyledTypography variant="body2" color="text.secondary">
+                {/* Trích dẫn nội dung hoặc mô tả của blog tại đây */}
               </StyledTypography>
             </CardContent>
-          </Collapse>
-        </StyledCard>
-      ))}
-    </Container>
-    
+            <CardActions disableSpacing>
+              <IconButton
+                aria-label="add to favorites"
+                onClick={() => handleLikeClick(post.id)}
+              >
+                <FavoriteIcon color={likedPosts.includes(post.id) ? 'error' : 'inherit'} />
+              </IconButton>
+              <IconButton aria-label="share">
+                <ShareIcon />
+              </IconButton>
+              <IconButton
+                aria-label="show more"
+                onClick={() => handleExpandClick(post.id)} // Truyền post.id vào hàm handleExpandClick
+                aria-expanded={expandedState[post.id]} // Sử dụng trạng thái mở rộng của card tương ứng
+              >
+                <ExpandMoreIcon />
+              </IconButton>
+            </CardActions>
+            <Collapse in={expandedState[post.id]} timeout="auto" unmountOnExit>
+              <CardContent>
+                <StyledTypography paragraph variant="body1" textAlign="justify">{post.content}</StyledTypography>
+                <StyledTypography paragraph textAlign="justify">
+                  {/* Nội dung chi tiết của blog */}
+                </StyledTypography>
+              </CardContent>
+            </Collapse>
+          </StyledCard>
+        ))}
+      </Container>
+      {/* Sử dụng component Pagination */}
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={blogPosts.length}
+        paginate={paginate}
+      />
     </Helmet>
-    
   );
 }
