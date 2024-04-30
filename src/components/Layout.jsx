@@ -7,6 +7,8 @@ import Product from '../pages/Product'
 import Cart from '../pages/Cart'
 import Checkout from '../pages/Checkout';
 import Thankyou from '../pages/Thankyou';
+import Blog from '../pages/Blog';
+import About from '../pages/About';
 
 const Layout = () => {
   return (
@@ -17,6 +19,7 @@ const Layout = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/thankyou' element={<Thankyou />} />
+        <Route path='/blog' element={<Blog />} />
     </Routes>
   )
 }

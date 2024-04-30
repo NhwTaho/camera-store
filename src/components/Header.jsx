@@ -12,10 +12,10 @@ const mainNav = [
         display: "Product",
         path: "/catalog"
     },
-    // {
-    //     display: "Blog",
-    //     path: "/blog"
-    // },
+    {
+        display: "Blog",
+        path: "/blog"
+    },
     {
         display: "About Us",
         path: "/about"
