@@ -13,7 +13,7 @@ const Breadcrumb = props => {
                 <Link to="/" >
                   <span>Home</span>
                 </Link>
-                <span>//</span>
+                <span>/</span>
                 <strong>{props.link}</strong>
             </div>
         </div>

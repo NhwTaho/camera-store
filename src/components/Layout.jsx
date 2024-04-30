@@ -9,6 +9,7 @@ import Checkout from '../pages/Checkout';
 import Thankyou from '../pages/Thankyou';
 import Blog from '../pages/Blog';
 import About from '../pages/About';
+import Contact from '../pages/Contact';
 
 const Layout = () => {
   return (
@@ -20,6 +21,8 @@ const Layout = () => {
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/thankyou' element={<Thankyou />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
     </Routes>
   )
 }
