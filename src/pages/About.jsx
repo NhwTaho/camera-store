@@ -27,22 +27,22 @@ const About = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Paper sx={{ p: 3 }}>
-              <BoldTypography variant="h4" gutterBottom fontFamily="Poppins, sans-serif">
+              <BoldTypography variant="h4" gutterBottom fontFamily="Josefin Sans, sans-serif">
                 Who We Are ?
               </BoldTypography>
-              <Typography variant="body1" fontFamily="Poppins, sans-serif">
-              Chúng tôi là một tập đoàn đa quốc gia hàng đầu hoạt động trong lĩnh vực các thiết bị về mạng.
+              <Typography variant="body1" fontFamily="Josefin Sans, sans-serif">
+                Chúng tôi là một tập đoàn đa quốc gia hàng đầu hoạt động trong lĩnh vực các thiết bị về mạng.
               </Typography>
-              <BoldTypography variant="h4" gutterBottom mt={4} fontFamily="Poppins, sans-serif">
+              <BoldTypography variant="h4" gutterBottom mt={4} fontFamily="Josefin Sans, sans-serif">
                 Who We Do ?
               </BoldTypography>
-              <Typography variant="body1" fontFamily="Poppins, sans-serif">
-              Chúng tôi là nhà cung cấp hàng đầu thế giới về các giải pháp mạng, mang đến các sản phẩm và dịch vụ đáng tin cậy, hiệu suất cao và tiện lợi cho khách hàng.
+              <Typography variant="body1" fontFamily="Josefin Sans, sans-serif">
+                Chúng tôi là nhà cung cấp hàng đầu thế giới về các giải pháp mạng, mang đến các sản phẩm và dịch vụ đáng tin cậy, hiệu suất cao và tiện lợi cho khách hàng.
               </Typography>
-              <BoldTypography variant="h4" gutterBottom mt={4} fontFamily="Poppins, sans-serif">
+              <BoldTypography variant="h4" gutterBottom mt={4} fontFamily="Josefin Sans, sans-serif">
                 Why Choose Us
               </BoldTypography>
-              <Typography variant="body1" fontFamily="Poppins, sans-serif">
+              <Typography variant="body1" fontFamily="Josefin Sans, sans-serif">
                 Chúng tôi trao quyền cho các đối tác giúp đạt được hiệu quả kinh doanh toàn cầu một cách phi thường và giúp người tiêu dùng tận hưởng những sự kỳ diệu của công nghệ
               </Typography>
             </Paper>

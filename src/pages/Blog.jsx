@@ -31,7 +31,7 @@ const StyledCard = styled(Card)({
 });
 
 const StyledTypography = styled(Typography)({
-  fontFamily: 'Poppins, sans-serif',
+  fontFamily: 'Josefin Sans, sans-serif',
 });
 
 export default function RecipeReviewCard() {
@@ -88,7 +88,7 @@ export default function RecipeReviewCard() {
                   <MoreVertIcon />
                 </IconButton>
               }
-              title={<StyledTypography variant="h6" component="div">{post.title}</StyledTypography>}
+              title={<StyledTypography variant="h5" component="div">{post.title}</StyledTypography>}
               subheader={post.date}
             />
             <CardContent>
@@ -116,7 +116,7 @@ export default function RecipeReviewCard() {
             </CardActions>
             <Collapse in={expandedState[post.id]} timeout="auto" unmountOnExit>
               <CardContent>
-                <StyledTypography paragraph variant="body1" textAlign="justify">{post.content}</StyledTypography>
+                <StyledTypography paragraph variant="h6" textAlign="justify">{post.content}</StyledTypography>
                 <StyledTypography paragraph textAlign="justify">
                   {/* Nội dung chi tiết của blog */}
                 </StyledTypography>

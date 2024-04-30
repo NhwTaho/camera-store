@@ -61,14 +61,14 @@ const FeedBack = () => {
         <div className="feedback__content">
             <div className="feedback__content__title">
                 <h1>Client Feddback</h1>
-                <h3>There are many variations of passages of Lorem Ipsum available</h3>
+                <h3>Customer Testimonials: What Our Clients Are Saying</h3>
             </div>
             <div className="feedback__content__coment">
               <Slider {...settings}>
                 <div className="feedback__content__coment__slider">
                   <img src={quote} alt="" />
                   <div className="feedback__content__coment__slider__content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum totam, laboriosam repellendus odit a modi eligendi quasi ex sed quaerat nemo, fugit aliquam nulla soluta fuga aperiam, eaque eos!
+                  Exceptional service! Quick delivery and top-notch product quality. Highly recommend
                   </div>
                   <div className="feedback__content__coment__slider__info">
                     <div className="feedback__content__coment__slider__info__img">
@@ -76,7 +76,7 @@ const FeedBack = () => {
                     </div>
                     <div className="feedback__content__coment__slider__info__details">
                       <div className="name">
-                          Kai
+                          Minh
                       </div>
                       <div className="posible">
                           Client
@@ -87,7 +87,7 @@ const FeedBack = () => {
                 <div className="feedback__content__coment__slider">
                   <img src={quote} alt="" />
                   <div className="feedback__content__coment__slider__content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum totam, laboriosam repellendus odit a modi eligendi quasi ex sed quaerat nemo, fugit aliquam nulla soluta fuga aperiam, eaque eos!
+                    Impressed with the fast response from customer support. They resolved my issue promptly.
                   </div>
                   <div className="feedback__content__coment__slider__info">
                     <div className="feedback__content__coment__slider__info__img">
@@ -95,7 +95,7 @@ const FeedBack = () => {
                     </div>
                     <div className="feedback__content__coment__slider__info__details">
                       <div className="name">
-                          Kai
+                          Huy
                       </div>
                       <div className="posible">
                           Client
@@ -106,7 +106,7 @@ const FeedBack = () => {
                 <div className="feedback__content__coment__slider">
                   <img src={quote} alt="" />
                   <div className="feedback__content__coment__slider__content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum totam, laboriosam repellendus odit a modi eligendi quasi ex sed quaerat nemo, fugit aliquam nulla soluta fuga aperiam, eaque eos!
+                  Great experience shopping here. The website is user-friendly, and the customer service team was very helpful.!
                   </div>
                   <div className="feedback__content__coment__slider__info">
                     <div className="feedback__content__coment__slider__info__img">
@@ -114,7 +114,7 @@ const FeedBack = () => {
                     </div>
                     <div className="feedback__content__coment__slider__info__details">
                       <div className="name">
-                          Kai
+                          Khanh
                       </div>
                       <div className="posible">
                           Client
@@ -125,7 +125,7 @@ const FeedBack = () => {
                 <div className="feedback__content__coment__slider">
                   <img src={quote} alt="" />
                   <div className="feedback__content__coment__slider__content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum totam, laboriosam repellendus odit a modi eligendi quasi ex sed quaerat nemo, fugit aliquam nulla soluta fuga aperiam, eaque eos!
+                  Absolutely satisfied with my purchase! The product exceeded my expectations, and the delivery was right on time!
                   </div>
                   <div className="feedback__content__coment__slider__info">
                     <div className="feedback__content__coment__slider__info__img">
@@ -133,7 +133,7 @@ const FeedBack = () => {
                     </div>
                     <div className="feedback__content__coment__slider__info__details">
                       <div className="name">
-                          Kai
+                          Ha Chi Hao
                       </div>
                       <div className="posible">
                           Client

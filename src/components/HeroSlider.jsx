@@ -75,7 +75,7 @@ HeroSlider.propTypes = {
 const HeroSliderItem = props => (
     <div className={`hero-slider__item ${props.active ? 'active' : ''}`}>
         <div className="hero-slider__item__info">
-            <strong>Wellcome to KaiStore</strong>
+            <strong>Wellcome to Phương Anh Store</strong>
             {/* <div className={`hero-slider__item__info__title`}>
                 <span>{props.item.title}</span>
             </div> */}
