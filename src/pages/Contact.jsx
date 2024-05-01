@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from '../components/Helmet';
 import Breadcrumb from '../components/Breadcrumb';
- // Import CSS file
 import '../assets/css/button.css'
 
 const Contact = () => {
@@ -43,8 +42,8 @@ const Contact = () => {
                     <iframe
                         title="Google Map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.2118169704663!2d106.69185723139088!3d10.85534833074461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752838bb35606d%3A0x45677c80bb3326d3!2zNzkvMUcgVOG7lSAyMCBLUDEsIEFuIFBow7ogxJDDtG5nLCBRdeG6rW4gMTIsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1714502823557!5m2!1svi!2s"
-                        width="600" // Thay đổi chiều rộng thành 800px
-                        height="400" // Thay đổi chiều cao thành 600px
+                        width="600"
+                        height="400" 
                         style={{ border: 0 }}
                         allowFullScreen=""
                         loading="lazy"

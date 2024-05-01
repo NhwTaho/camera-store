@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import Grid from './Grid'
 
-import logo from '../assets/images/logo1.png'
+import logo from '../assets/images/logo-footer.jpg'
 
 const footerAboutLinks = [
     {

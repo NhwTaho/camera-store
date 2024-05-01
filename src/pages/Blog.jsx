@@ -38,12 +38,12 @@ export default function RecipeReviewCard() {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 8;
 
-  // Tính chỉ số bài viết đầu tiên và cuối cùng của trang hiện tại
+  
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
 
-  const [expandedState, setExpandedState] = useState({}); // Lưu trạng thái mở rộng của từng card
+  const [expandedState, setExpandedState] = useState({}); 
 
   const handleExpandClick = (postId) => {
     setExpandedState((prevExpanded) => {
@@ -93,7 +93,7 @@ export default function RecipeReviewCard() {
             />
             <CardContent>
               <StyledTypography variant="body2" color="text.secondary">
-                {/* Trích dẫn nội dung hoặc mô tả của blog tại đây */}
+                
               </StyledTypography>
             </CardContent>
             <CardActions disableSpacing>
@@ -108,8 +108,8 @@ export default function RecipeReviewCard() {
               </IconButton>
               <IconButton
                 aria-label="show more"
-                onClick={() => handleExpandClick(post.id)} // Truyền post.id vào hàm handleExpandClick
-                aria-expanded={expandedState[post.id]} // Sử dụng trạng thái mở rộng của card tương ứng
+                onClick={() => handleExpandClick(post.id)} 
+                aria-expanded={expandedState[post.id]} 
               >
                 <ExpandMoreIcon />
               </IconButton>
@@ -118,14 +118,14 @@ export default function RecipeReviewCard() {
               <CardContent>
                 <StyledTypography paragraph variant="h6" textAlign="justify">{post.content}</StyledTypography>
                 <StyledTypography paragraph textAlign="justify">
-                  {/* Nội dung chi tiết của blog */}
+                 
                 </StyledTypography>
               </CardContent>
             </Collapse>
           </StyledCard>
         ))}
       </Container>
-      {/* Sử dụng component Pagination */}
+     
       <Pagination
         postsPerPage={postsPerPage}
         totalPosts={blogPosts.length}

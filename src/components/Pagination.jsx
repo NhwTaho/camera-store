@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/pagination.css'; // Import file CSS vào component
+import '../assets/css/pagination.css';
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   const pageNumbers = [];
@@ -9,8 +9,8 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   }
 
   return (
-    <nav className="pagination-nav"> {/* Sử dụng class từ file CSS */}
-      <ul className="pagination-list"> {/* Sử dụng class từ file CSS */}
+    <nav className="pagination-nav"> 
+      <ul className="pagination-list"> 
         {pageNumbers.map((number) => (
           <li key={number} className="pagination-item"> {/* Sử dụng class từ file CSS */}
             <a href="#" onClick={() => paginate(number)} className="pagination-link" >
