@@ -90,7 +90,8 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="header__menu__item header__menu__right__item">
-                            <i className="bx bx-user"></i>
+                            <a href="/login"><i className="bx bx-user"></i></a>
+                            
                         </div>
                     </div>
                 </div>
