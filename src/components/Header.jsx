@@ -23,7 +23,11 @@ const mainNav = [
     {
         display: "Contact",
         path: "/contact"
-    }
+    },
+    // {
+    //     display: "Login",
+    //     path: "/login"
+    // }
 ]
 
 const Header = () => {
@@ -90,7 +94,7 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="header__menu__item header__menu__right__item">
-                            <a href="/login"><i className="bx bx-user"></i></a>
+                            <Link to="/login"><i className="bx bx-user"></i></Link>
                             
                         </div>
                     </div>

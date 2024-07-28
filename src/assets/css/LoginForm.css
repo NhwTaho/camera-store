@@ -3,7 +3,8 @@
     background: rgb(10, 9, 10) url;
     color: #060505;
     border-radius: 10px;
-    padding: 20px 40px;
+    padding: 40px 40px;
+    margin: 0 auto;
 }
 .wrapper h1 {
     font-size: 36px;
